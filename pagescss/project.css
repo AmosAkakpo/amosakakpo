@@ -73,7 +73,7 @@ p{
 
 /*Body of the web page */
 .projectPageIntro{
-    margin-left: 150px;
+    margin-left: 15vw;
     font-family: 'SF-Display';
     src: url(../fonts/SF-Pro-Display-Bold.woff);
     font-weight: bolder;
@@ -87,7 +87,7 @@ p{
     font-weight: bold;
     font-size: 20px;
  
-    margin-left: 150px;
+    margin-left: 15vw;
     display: grid;
 
     grid-template-columns: repeat(3,1fr);
@@ -174,7 +174,7 @@ p{
     font-weight: bold;
     font-size: 20px;
  
-    margin-left: 150px;
+    margin-left: 15vw;
     display: grid;
 
     grid-template-columns: repeat(3,1fr);
