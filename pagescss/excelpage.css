@@ -63,7 +63,7 @@ a.active, a:hover{
 .introduction{
     width: 70vw;
     height: auto;
-    border: 2px solid black;
+    border: 2px;
     margin-left: 15vw;
     margin-top: 5%;
 }
