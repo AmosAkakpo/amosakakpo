@@ -60,18 +60,25 @@ a.active, a:hover{
     transition: 0.6s;
 }
 
-.content{
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+.introduction{
+    width: 70vw;
+    height: auto;
+    border: 2px solid black;
+    margin-left: 15vw;
+    margin-top: 5%;
 }
-p{
-    margin: 10%;
-    font-size: 3rem;
+
+.project1{
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 2.5%;
 }
+.project2{
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 2.5%;
+}
+
 
 @media (max-width: 952px) {
     nav ul li a{
