@@ -1,69 +1,74 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     background-color: rgb(239, 250, 255);
+    font-weight: 200;
 }
 
-nav{
-    height: 80px;
-    width: 100vw;   
-    margin-top: 10px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 
-}
+    width: 80vw;
 
-.checkbtn{
-    font-size: 30px;
-    color: black;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
+    margin-left: 10vw;
+  }
 
-}
-label.logo{
-    color:black;
-    font-size: 30px;
-    line-height: 80px;
-    margin-left: 150px;
-    font-family: 'Times New Roman', Times, serif;
-}   
- 
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .webowner{
+    display: block;
+  }
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  .imgLogo{
 
-
-nav ul {
-    float: right;
-    margin-right: 150px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: black;
-    font-size: 20px;
+        transition: transform 4s ease-in-out;
+    }
+    .imgLogo:hover {
+        transform: rotate(3600deg);
+       
+    }
+    
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #000;
     text-decoration: none;
-}
+  }
 
-a.active, a:hover{
+  a.active, a:hover{
     font-weight: bold;
     transition: 0.6s;
+    
 }
 
 .introduction{
     width: 70vw;
     height: auto;
-    border: 2px;
+    border: 2px ;
     margin-left: 15vw;
     margin-top: 5%;
 }
@@ -80,44 +85,20 @@ a.active, a:hover{
 }
 
 
-@media (max-width: 952px) {
-    nav ul li a{
-        font-size: 18px;
+@media (max-width: 805px) {
+    header{
+        width: 90vw;
+        margin-left: 5vw;
     }
 }
-
-@media (max-width: 880px) {
-    .checkbtn{
-        display: block;
-    }   
-    
-    .logo  {
-        margin-top: 30px;
-        color:white;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        top: 90px;
-        left: 0;
-        text-align: center;
-        transition: all  .55s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a{
-        font-size:20px;
-    }
-
-    #check:checked ~ ul{
+@media (max-width: 625px) {
+    .webowner{
         display: none;
     }
+    
+}
+
+@media (min-width: 550px) 
+{
     
 }
