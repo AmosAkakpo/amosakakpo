@@ -1,12 +1,11 @@
 
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 body{
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: "San Francisco", Arial, sans-serif;
     background-color: rgb(239, 250, 255);
     font-weight: 200;
 }
@@ -17,9 +16,9 @@ header {
     align-items: center;
     padding: 10px;
 
-    width: 80vw;
+    width: 90vw;
 
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
 
   .logo {
@@ -65,36 +64,35 @@ header {
     
 }
 
-.content{
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
-p{
-    margin: 10%;
-    font-size: 3rem;
-}
+
 
 /*Body of the web page */
+/*Project page introduction*/
 .projectPageIntro{
     margin-left: 15vw;
-    font-family: 'SF-Display';
-    src: url(../fonts/SF-Pro-Display-Bold.woff);
+    font-family: "San Francisco", Arial, sans-serif;
     font-weight: bolder;
     margin-bottom: 50px;
 }
+
+.ppIemoji{
+    font-size:100px;
+  
+  }
+  .ppItext{
+    font-size:90px;
+    font-weight: bolder; 
+    letter-spacing: 1px;
+  }
 /*fruit rush project*/
 .container1{
-    width: 70vw;
+    width: 80vw;
     height: 70vh;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "San Francisco", Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+   
  
-    margin-left: 15vw;
+    margin-left: 10vw;
     display: grid;
 
     grid-template-columns: repeat(3,1fr);
@@ -114,6 +112,11 @@ p{
     grid-row: 1 / span 1;
     
 }
+
+.containertitle{
+    font-size: 3rem;
+}
+
 #cl11{
     grid-row: 2 / span 2;
     grid-column: 1 / span 2;
@@ -175,13 +178,13 @@ p{
 }
 /*Excel project*/
 .container2{
-    width: 70vw;
+    width: 80vw;
     height: 70vh;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "San Francisco", Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+   
  
-    margin-left: 15vw;
+    margin-left: 10vw;
     display: grid;
 
     grid-template-columns: repeat(3,1fr);
@@ -246,13 +249,12 @@ p{
 
 /*Online voting website*/
 .container3{
-    width: 70vw;
+    width: 80vw;
     height: 70vh;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "San Francisco", Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
- 
-    margin-left: 15vw;
+   
+    margin-left: 10vw;
     display: grid;
 
     grid-template-columns: repeat(3,1fr);
@@ -333,25 +335,56 @@ p{
 }
 
 
-
-
-
-
 /*Screen  sizing*/
-@media (max-width: 805px) {
-    header{
-        width: 90vw;
-        margin-left: 5vw;
+@media (max-width:1100px) {
+    .ppItext{
+        font-size: 8vw;
+    }
+
+    .containertitle{
+        font-size: 4.5vw;
+    }
+    .container1, .container2, .container3{
+        height: 45vw;
     }
 }
-@media (max-width: 625px) {
+@media (max-width: 900px) {
+
+    .projectPageIntro{
+        margin-bottom: 1vw;
+
+        transition: ease-out;
+    }
+
+
+    .container1, .container2, .container3{
+        height: 48vw;
+        display: block;
+        margin-bottom: 5vw;
+        
+        transition: ease-out;
+    }
+
+    #cl12, #cl13,#cl22, #cl23,#cl32, #cl33{
+        display: none;
+    }
+    
+    
+}
+@media (max-width: 630px) {
     .webowner{
         display: none;
+    }   
+
+    .ppIemoji{
+            font-size: 12vw;
+
+            transition: ease-out;
     }
     
 }
 
-@media (min-width: 550px) 
+@media (max-width: 550px) 
 {
     
 }
