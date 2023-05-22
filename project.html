@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Projects</title>
+
+    <style>
+        #imgLogo{
+
+            transition: transform 4s ease-in-out;
+            }
+        #imgLogo:hover {
+            transform: rotate(3600deg);
+
+            }
+
+        .border_color{
+            border: solid rgb(13, 79, 45);
+            
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div> <!--Content warper-->
+        <div class="mx-[5%] sm:mx-[10%] mt-[2vw]"> <!--Header-->
+
+            <nav class="flex justify-between items-center transition ease-out  duration-700">
+
+                <div class="flex items-center ease-out">
+                    <img src="images/aalogo.png" alt="Logo" class="w-[90px] h-[90px] transition ease-out duration-700 " id="imgLogo">
+                    <span class="hidden  sm:inline sm:text-2xl sm:text-black"><a href="index.html">Amos Akakpo</a></span>
+                </div>
+
+                <ul class="shrink flex justify-item-end justify-evenly items-center transition ease ">
+                    <li class="">
+                        <a href="index.html" >
+                            <span class="mr-3 transition ease-out hover:text-xl hover:underline underline-offset-8 decoration-red-700">About me</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="project.html" class="underline underline-offset-8 decoration-yellow-500 ">
+                            <span class="mr-3 transition ease-out hover:text-xl">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <span class="mr-3 transition ease-out hover:text-xl hover:underline underline-offset-8 decoration-orange-300">Contact</span>
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mt-11 mx-[10%] mb-11"><!--content of the page-->
+            <div ><!--Page intro-->
+                <span class="text-4xl sm:text-6xl">&#128203;</span>
+                <span class="text-5xl sm:text-7xl" ><strong>Hello, I'm Amos</strong></span>
+              
+            </div> 
+
+            <div class="mt-[20px] ml-2">
+                <span>Nb: click on the project title :)</span>
+            </div>
+            
+            <!--ONline voting website-->
+            <div class="mt-11  text-4xl font-extrabold">
+                <div >
+                    
+                    <span class=""><a href="https://github.com/AmosAkakpo/onlineVotingWebsite/tree/main/project/web_backend" target="_blank">Online voting website</a></span> 
+                    <span class="" style=" text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;"><a href="https://docs.djangoproject.com/en/4.2/" target="_blank" style="text-decoration: none;color: rgb(13, 79, 45);">@Django</a></span> 
+                </div>
+               
+                <div class="mt-7 grid grid-cols-2  grid-rows-2 md:grid-cols-3  gap-3 ">
+                    <div class=" col-span-2 row-span-2  border-2 border-green-600 rounded-2xl p-2 "  >
+                        <video src="picture/project/onlineVotingWeb/online voting website.mp4" controls ></video>
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-1 overflow-hidden border-2 border-yellow-200 rounded-2xl" >   
+                        <img src="picture/project/onlineVotingWeb/djangopi.png" alt="" class="w-full object-cover rounded-2xl">
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-1 overflow-hidden rounded-2xl border-2 border-slate-800 mt-2"  >
+                        <img src="picture/project/onlineVotingWeb/settingsPic.png" alt="" class="w-full object-fit rounded-2xl">
+                    </div>
+                </div>
+            </div>
+            <!--Text summarizer-->
+            <div class="mt-11  text-4xl font-extrabold">
+                <div >
+                    <span class="" ><a href="https://github.com/AmosAkakpo/TextSum/tree/main/text_sum_folder" target="_blank" style="text-decoration: none;  " class="text-black">Text summarizer</a> 
+                    <span class="" tyle=" text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;color: yellow  ;"> <a href="https://spacy.io/usage" target="_blank" style="text-decoration: none;" class=" text-white bg-red-400 rounded-full px-2 pb-2 ">@Spacy</a></span>                
+                    </span> 
+                    <span class=""  style=" text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;"><a href="https://kivy.org/doc/stable/" target="_blank" style="text-decoration: none;" class="text-slate-600 ml-1"> @Kivy </a></span> 
+                    <span class="" tyle=" text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;color: yellow  ;"> <a href="https://tailwindcss.com/docs/installation" target="_blank" style="text-decoration: none;" class="text-blue-600">@Tailwindcss </a></span>
+                </div>
+               
+                <div class="mt-7 grid grid-cols-2 grid-rows-2 md:grid-cols-3 gap-3 ">
+                    <div class="col-span-2 row-span-2 border-2 border-green-600 rounded-2xl p-2">
+                        <video src="picture/project/ai_machinelearning/text_summarizer/text_sum_video.mp4" controls></video>
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-2 overflow-hidden border-2 border-yellow-500 rounded-2xl h-10vw">
+                        <img src="picture/project/ai_machinelearning/text_summarizer/tools.png" alt="" class="w-full h-full object-fit rounded-2xl">
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <!--Excel project-->
+            <div class="mt-11  text-4xl font-extrabold">
+                <div class="">
+                    <span class="" > <a href="excel.html" style="text-decoration: none; color: rgb(41, 68, 41);" target="_blank">Excel projects</a> </span> 
+                </div>
+               
+                <div class="mt-7 grid grid-cols-2  grid-rows-2 md:grid-cols-3  gap-3 ">
+                    <div class=" col-span-2 row-span-2  border-2 border-slate-700 rounded-2xl p-2 "  >
+                        <img src="picture/project/excel/excelPic2.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-1  border-2 border-rose-200 rounded-2xl" >   
+                        <img src="picture/project/excel/excelPic3.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-1  border-2 border-yellow-200 rounded-2xl h-[16vw] overflow-clip" >   
+                        <img src="picture/project/excel/excel.png" alt="" class="w-full  object-fit rounded-2xl">
+                    </div>
+                    
+                </div>
+        
+            </div>
+
+            <!--Fruit rush project-->
+
+            <div class="mt-11  text-4xl font-extrabold">
+                <div >
+                    <span class="" ><a href="FruitBasket.html" style="text-decoration: none; color:  black;" target="_blank">Fruit Basket</a> 
+                    </span> <span class=""  style=" text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" style="text-decoration: none;color: brown;">@C#</a></span> 
+                    <span class="" tyle=" text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;color: yellow  ;"> <a href="https://unity.com/" target="_blank" style="text-decoration: none;">@Unity</a></span>
+                </div>
+               
+                <div class="mt-7 grid grid-cols-2  grid-rows-2 md:grid-cols-3  gap-3">
+                    <div class=" col-span-2 row-span-2  border-2 border-blue-600 rounded-2xl p-2 "  >
+                        <video src="picture/project/gamedev/fruit_rush_video.mp4" controls ></video>
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-1 overflow-hidden border-2 border-violet-500 rounded-2xl h-[15vw]" >   
+                        <img src="picture/project/gamedev/unityPic.png" alt="" class="w-full object-cover rounded-2xl">
+                    </div>
+                    <div class="hidden md:inline md:col-span-1 md:row-span-1 overflow-hidden rounded-2xl border-2 border-stone-700 mt-2 h-[14vw]"  >
+                        <img src="picture/project/gamedev/vsMicrosoft.png" alt="" class="w-full object-fit rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+       
+    </div>
+</body>
+</html>
